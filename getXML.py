@@ -27,13 +27,10 @@ while True:
 			print "ENTREI"
 			data = ZipFile('%s.zip' % idlattes).read('curriculo.xml')
 			break
-		else: print "OPA, VAMOS DE NOVO?"
 	except:
 		pass
 
 root = ET.fromstring(data)
-
-print root
 
 
 
